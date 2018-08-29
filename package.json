@@ -1,0 +1,23 @@
+{
+  "name": "stock-broker-clicker",
+  "description": "Stocker Broker Clicker Game",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Justin Formentin",
+  "homepage": "https://justinformentin.com/stock-broker-clicker",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:justinformentin/stocker-broker-clicker"
+  },
+  "dependencies": {
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
+    "react-scripts": "1.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

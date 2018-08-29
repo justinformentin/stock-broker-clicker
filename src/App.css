@@ -1,0 +1,143 @@
+html {
+  background: rgb(10,54,89);
+  background: linear-gradient(135deg, rgba(10,54,89,1) 0%, rgba(33,123,198,1) 100%);
+  color: #fcf7ff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Classes */
+
+.flex {
+  display: flex;
+}
+
+.vertical {
+  flex-direction: column;
+}
+
+.increment-text {
+  font-size:1.5rem;
+}
+
+.outer-box {
+  height: calc(100% / 3);
+}
+
+/* Title Div */
+
+#site-title {
+  width: 100%;
+  height: 50px;
+  background: #0d1b1e;
+}
+
+#site-title p {
+  text-align: center;
+  width: 100%;
+  align-self: center;
+  font-size: 24px;
+}
+
+/* Body Div */
+
+#game-body {
+  width: 100%;
+  height: calc(100vh - 100px);
+}
+
+#click-area {
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+}
+
+#click-area p {
+  text-align: center;
+}
+
+#click-area button {
+  background: none;
+  border: none;
+  width: 100%;
+}
+
+#click-area button img {
+  width: 25vh;
+  border-radius:200px;
+  box-shadow: 5px 10px 30px rgba(25,25,25,.5);
+  -webkit-box-shadow: 5px 10px 30px rgba(25,25,25,.5);
+}
+
+#click-area button img:active {
+  transform:translateY(5px);
+  transition: 0.2s ease-out all;
+  box-shadow:none;
+}
+
+#click-area-items {
+  font-size: 2.5rem;
+  width: 50%;
+  align-self: center;
+  display: block;
+  justify-content: center;
+}
+
+#desktop-buy-area {
+  display: none;
+  padding:3rem 2rem;
+}
+
+/* Desktop Width Changes */
+
+@media (min-width: 800px) {
+
+  #buy-area-mobile {
+    height: 100%;
+    display:none;
+  }
+  
+  #buy-area-mobile-items {
+    height: 100%;
+  }
+
+  .mobile-menu {
+    display:none;
+  }
+  #mobile-footer {
+    display: none;
+  }
+
+  #game-body {
+    height: calc(100vh - 50px);
+  }
+
+  #desktop-buy-area {
+    display: flex;
+    width: 50%;
+  }
+
+  #desktop-items {
+    width: 100%;
+  }
+
+  #click-area {
+    width: 50%;
+  }
+
+  #click-area button img {
+    width: 256px;
+  }
+}
+
+@media only screen and (min-width:425px) and (max-width: 800px) {
+  #click-area-items {
+    padding-top:25%;
+  }
+}
+
+@media only screen and (max-width:425px){
+  #click-area-items {
+    padding-top:85%;
+  }
+}
